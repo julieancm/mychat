@@ -1,18 +1,13 @@
-<a class="item">
-Myチャット
-</a>
-<a class="item">
-メッセージ
-</a>
+<%= link_to "Myチャット", root_path, class: "item" %>
 <div class="right menu">
 	<div class="ui dropdown item">
 		アカウント <i class="dropdown icon"></i>
 		<div class="menu">
 			<a class="item">ログアウト</a>
-			<a class="item">ログイン</a>
+      <%= link_to "ログイン", login_path, class: "item" %>
 		</div>
 	</div>
 	<div class="item">
-			<div class="ui primary button">アカウント登録</div>
+		<div class="ui primary button">アカウント登録</div>
 	</div>
 </div>
